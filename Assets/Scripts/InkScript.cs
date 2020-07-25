@@ -118,19 +118,21 @@ public class InkScript : MonoBehaviour
         if (story.canContinue)
         {
             GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>().Freeze();
-            //  FindObjectOfType<PlayerMovement>().Freeze();
             text = story.Continue();
+        }
 
-        }
-        else if(story.currentChoices.Count > 0)
+        else if (story.currentChoices.Count > 0)
         {
-           GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>().Freeze();
+            GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>().Freeze();
+             
         }
+
         else
         {
             GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>().UnFreeze();
 
         }
+
 
         return text;
     }
@@ -154,4 +156,12 @@ public class InkScript : MonoBehaviour
                 textPrefab.alignment = TextAnchor.LowerCenter;
             }
      */
+
+
+
+
+    
+
+    
+
 }
