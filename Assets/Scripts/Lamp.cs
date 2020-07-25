@@ -34,7 +34,7 @@ public class Lamp : MonoBehaviour
     {
         if (player.transform.position.y > pivot.transform.position.y)
         {
-            Debug.Log("good");
+          //  Debug.Log("good");
             sprite.sortingOrder = 1; 
            // gameObject.layer = LayerMask.NameToLayer("Streetlight");
         }

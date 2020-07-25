@@ -120,11 +120,18 @@ public class InkScript : MonoBehaviour
             GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>().Freeze();
             //  FindObjectOfType<PlayerMovement>().Freeze();
             text = story.Continue();
+
+        }
+        else if(story.currentChoices.Count > 0)
+        {
+           GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>().Freeze();
         }
         else
         {
             GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>().UnFreeze();
+
         }
+
         return text;
     }
 
