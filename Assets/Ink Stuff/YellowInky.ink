@@ -5,6 +5,7 @@ welcome to the parking lot.
 
 == beginning == 
 how may i help you?
+
 +[empty] it's so empty out here!
 yes the event is long over 
 ->beginning
