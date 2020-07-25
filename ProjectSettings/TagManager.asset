@@ -47,6 +47,12 @@ TagManager:
   - name: Friend
     uniqueID: 752802909
     locked: 0
+  - name: Streetlight2
+    uniqueID: 4059165233
+    locked: 0
   - name: Player
     uniqueID: 1754814743
+    locked: 0
+  - name: Streetlight
+    uniqueID: 1853095521
     locked: 0
