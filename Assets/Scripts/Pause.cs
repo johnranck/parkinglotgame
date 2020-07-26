@@ -9,7 +9,8 @@ public class Pause : MonoBehaviour
 
 
     [SerializeField] public GameObject pausePanel;
-     [SerializeField] AudioSource playMusic; 
+     [SerializeField] AudioSource playMusic;
+    [SerializeField] AudioSource playPauseMusic;
 
     // Start is called before the first frame update
     void Start()
@@ -38,7 +39,7 @@ public class Pause : MonoBehaviour
             {
                 UnPauseGame();
                 Debug.Log("third");
-               // playMusic.mute = false; 
+                playMusic.mute = false; 
             }
 
            }
@@ -50,6 +51,7 @@ public class Pause : MonoBehaviour
         Time.timeScale = 0;
         pausePanel.SetActive(true);
         playMusic.mute = true;
+        playPauseMusic.mute = false; 
 
     }
 
@@ -58,6 +60,6 @@ public class Pause : MonoBehaviour
         Time.timeScale = 1;
         pausePanel.SetActive(false);
         playMusic.mute = false;
-
+        playPauseMusic.mute = true; 
     }
 }
