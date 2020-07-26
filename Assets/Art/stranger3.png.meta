@@ -1,10 +1,9 @@
 fileFormatVersion: 2
-guid: 3129d64c06f4f4de7ad07f999af81db3
+guid: 050a740ce801f4fbbaef9b8f0d44edb4
 TextureImporter:
   fileIDToRecycleName:
-    21300000: parkingLotStranger1_0
-    21300002: parkingLotStranger1_1
-    21300004: parkingLotStranger1_2
+    21300000: stranger3_0
+    21300002: stranger3_1
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -109,7 +108,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: parkingLotStranger1_0
+      name: stranger3_0
       rect:
         serializedVersion: 2
         x: 0
@@ -123,13 +122,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b3ca3f42a632458cbfb3516e52f6481
+      spriteID: 58f62fa02e7934794aaa038a920139f4
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: parkingLotStranger1_1
+      name: stranger3_1
       rect:
         serializedVersion: 2
         x: 16
@@ -143,27 +142,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b204c59d2df2a411f9126c1bdf1c8d9d
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: parkingLotStranger1_2
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b1810294427a54990bb8a5f83c2787bf
+      spriteID: ffdd19f02bac148e9a89b2436f5c532c
       vertices: []
       indices: 
       edges: []
@@ -171,7 +150,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 86344f5a1cf334fb5b8b0c50d9156a31
+    spriteID: 10c83c44641694c7dac0df527efbc7f1
     vertices: []
     indices: 
     edges: []
