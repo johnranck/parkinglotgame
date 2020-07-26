@@ -8,33 +8,37 @@ public class Pause : MonoBehaviour
 
 
 
-    [SerializeField] public GameObject pausePanel; 
+    [SerializeField] public GameObject pausePanel;
+     [SerializeField] AudioSource playMusic; 
 
     // Start is called before the first frame update
     void Start()
     {
+        //playMusic = GetComponent<AudioSource>();
         //pausePanel.SetActive(false);
     }
 
     // Update is called once per frame
        void Update()
        {
-
-
            if (Input.GetKeyDown(KeyCode.Escape))
+
            {
             Debug.Log("first"); 
                if (!pausePanel.activeInHierarchy)
                {
-                Debug.Log("second"); 
-                   PauseGame();
-               }
+                Debug.Log("second");
+                //playMusic.mute = playMusic.mute;
+                PauseGame();
+             //   playMusic.mute = true;
+                
+            }
 
-           else if (pausePanel.activeInHierarchy)
+            else if (pausePanel.activeInHierarchy)
             {
                 UnPauseGame();
                 Debug.Log("third");
-               
+               // playMusic.mute = false; 
             }
 
            }
@@ -44,12 +48,16 @@ public class Pause : MonoBehaviour
     public  void  PauseGame()
     {
         Time.timeScale = 0;
-        pausePanel.SetActive(true); 
+        pausePanel.SetActive(true);
+        playMusic.mute = true;
+
     }
 
-   public  void  UnPauseGame()
+    public  void  UnPauseGame()
     {
         Time.timeScale = 1;
         pausePanel.SetActive(false);
+        playMusic.mute = false;
+
     }
 }
