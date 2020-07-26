@@ -5,45 +5,36 @@ using UnityEngine.UI;
 
 public class Pause : MonoBehaviour
 {
-
-
-
     [SerializeField] public GameObject pausePanel;
-     [SerializeField] AudioSource playMusic;
+    [SerializeField] AudioSource playMusic;
     [SerializeField] AudioSource playPauseMusic;
+    [SerializeField] GameObject player; 
 
-    // Start is called before the first frame update
     void Start()
     {
-        //playMusic = GetComponent<AudioSource>();
         //pausePanel.SetActive(false);
     }
 
-    // Update is called once per frame
        void Update()
        {
            if (Input.GetKeyDown(KeyCode.Escape))
-
            {
             Debug.Log("first"); 
                if (!pausePanel.activeInHierarchy)
                {
                 Debug.Log("second");
-                //playMusic.mute = playMusic.mute;
                 PauseGame();
-             //   playMusic.mute = true;
-                
             }
 
             else if (pausePanel.activeInHierarchy)
             {
                 UnPauseGame();
                 Debug.Log("third");
-                playMusic.mute = false; 
-            }
+                playMusic.mute = false;
+                player.GetComponent<PlayerMovement>().UnFreeze();
 
-           }
- 
+            }
+        }
        }
 
     public  void  PauseGame()
@@ -51,8 +42,8 @@ public class Pause : MonoBehaviour
         Time.timeScale = 0;
         pausePanel.SetActive(true);
         playMusic.mute = true;
-        playPauseMusic.mute = false; 
-
+        playPauseMusic.mute = false;
+        player.GetComponent<PlayerMovement>().Freeze();
     }
 
     public  void  UnPauseGame()
@@ -60,6 +51,7 @@ public class Pause : MonoBehaviour
         Time.timeScale = 1;
         pausePanel.SetActive(false);
         playMusic.mute = false;
-        playPauseMusic.mute = true; 
+        playPauseMusic.mute = true;
+        player.GetComponent<PlayerMovement>().UnFreeze();
     }
 }

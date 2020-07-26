@@ -9,7 +9,6 @@ i am here too.
 
 == first == 
 yes i am here on the rise. 
-
 +[bye] thankssbye ->END
 
 ->END
