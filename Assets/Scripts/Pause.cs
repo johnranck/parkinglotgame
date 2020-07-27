@@ -8,6 +8,7 @@ public class Pause : MonoBehaviour
     [SerializeField] public GameObject pausePanel;
     [SerializeField] AudioSource playMusic;
     [SerializeField] AudioSource playPauseMusic;
+    [SerializeField] AudioSource playCompMusic; 
     [SerializeField] GameObject player; 
 
     void Start()

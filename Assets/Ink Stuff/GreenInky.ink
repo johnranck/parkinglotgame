@@ -1,6 +1,7 @@
-i am here too. 
+i am here too. i exist as a dog. i walk around on a leash. 
+i run around at night sometimes. i stare into the moon. the moon stares back.
 
-*[why?] why? 
+*[why?] that seems pretty dumb. 
 *[oh] oh i see
 
 - 

@@ -11,10 +11,11 @@ public class InkScript : MonoBehaviour
     public GameObject dialogPanel;
     public GameObject buttonPanel;
     public TextAsset inkJSON;
-    private Story story;
+    public Story story;
     public Text textPrefab;
     public Button buttonPrefab;
     List<string> tags;
+    public bool continuing = false; 
 
 
     // Start is called before the first frame update
@@ -69,6 +70,11 @@ public class InkScript : MonoBehaviour
                 chooseStoryChoice(choice);
             });
         }
+    }
+
+    internal bool canContinue(bool v)
+    {
+        throw new NotImplementedException();
     }
 
     public void eraseUI()
@@ -135,6 +141,19 @@ public class InkScript : MonoBehaviour
 
 
         return text;
+    }
+
+
+    public void ContinueBool()
+    {
+        if (story.canContinue)
+        {
+            continuing = true; 
+        }
+        else
+        {
+            continuing = false; 
+        }
     }
 
     /*

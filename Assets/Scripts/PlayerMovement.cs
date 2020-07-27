@@ -43,6 +43,8 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    
+
     void MoveCharacter()
     {
         myRigidbody.MovePosition(
