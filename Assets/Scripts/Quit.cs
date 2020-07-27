@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Quit : MonoBehaviour
 {
-
+    public  Pause paused; 
    
     public void OnButtonPress()
     {

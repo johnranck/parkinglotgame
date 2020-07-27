@@ -644,7 +644,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 787453373}
         m_MethodName: OnButtonPress
         m_Mode: 1
         m_Arguments:
@@ -1890,6 +1890,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd92a3f2345db4f2e9bc4d45400a8aa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paused: {fileID: 0}
 --- !u!1001 &807989131
 PrefabInstance:
   m_ObjectHideFlags: 0
