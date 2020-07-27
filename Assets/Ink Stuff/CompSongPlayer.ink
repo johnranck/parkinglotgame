@@ -1,6 +1,6 @@
-you are playing your favorite song
-it is a fun song. 
-you like listening to your song. 
-you heard it when you were twelve. 
-it was another fun day listening to your song. 
-->END
+do you remember when you were twelve
+and this song came on the radio? 
+we were going to school. 
+we usually didn't go to school together.
+i always liked it. 
+you'd never heard it before. 
